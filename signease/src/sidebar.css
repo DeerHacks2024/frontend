@@ -1,27 +1,27 @@
 /* Sidebar.css */
 .sidebar {
     height: 100%;
-    width: 0; /* start out as 0 width */
+    width: 0; 
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.5s; /* Smooth transitions */
+    transition: 0.5s;
     padding-top: 60px;
   }
   
   .sidebar.open {
-    width: 250px; /* Width of the sidebar when it's open */
+    width: 250px;
   }
   
   .sidebar.closed {
-    width: 0; /* Collapse to 0 width when it's closed */
+    width: 0; 
   }
   
   .sidebarToggle.hideArrow::before {
-    display: none; /* This will hide the arrow */
+    display: none;
   }
 
   .sidebar a {

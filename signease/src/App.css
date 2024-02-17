@@ -9,9 +9,10 @@
 }
 
 .App h1 {
-  font-size: 4rem;
-  margin-bottom: 2rem;
+  font-size: 6rem;
+  margin-bottom: 8rem;
   color: #4285F4; /* Google blue for example */
+  font-family: 'Font Name', Courier New;
 }
 
 /* Add styles for SearchBar, animations, etc. */
@@ -74,12 +75,15 @@
 }
 
 .searchInput {
-  flex-grow: 1; /* Take up available space */
-  margin-right: 8px; /* Add some space between the input and the button */
+  width: 300px; /* Adjust the width as needed */
+  height: 65px; /* Adjust the height as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  /* Add any other desired styles */
 }
 
 .searchButton {
-  padding: 10px 20px; /* Add padding to match the input's height */
+  padding: 10px 20px;
+  height: 71px; /* Add padding to match the input's height */
 }
 
 .App-logo {
