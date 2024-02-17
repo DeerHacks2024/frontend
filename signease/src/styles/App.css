@@ -1,0 +1,118 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #121212;
+  color: white;
+}
+
+.App h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #4285F4; /* Google blue for example */
+}
+
+/* Add styles for SearchBar, animations, etc. */
+
+/* App.css */
+/* App.css */
+.sidebarToggle {
+  position: fixed;
+  top: 50%;
+  left: 250px; /* Adjust this value based on the sidebar's width to position the arrow right next to the sidebar */
+  transform: translateY(-50%);
+  z-index: 100;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff; /* Adjust arrow color as needed */
+  font-size: 24px; /* Adjust size as needed */
+}
+
+/* Additional styling for hover effect, etc. */
+.sidebarToggle:hover {
+  color: #ccc; /* Example hover color */
+}
+
+/* App.css */
+.sidebarToggle::before {
+  content: '';
+  display: inline-block;
+  margin-right: 5px;
+  border: solid white;
+  border-width: 0 2px 2px 0; /* Adjust these values for a thinner arrow */
+  padding: 3px;
+  transform: rotate(-45deg); /* Adjust rotation if needed */
+  transition: transform 0.3s; /* Smooth transition for rotation */
+}
+.sidebarToggle::before {
+  transform-origin: center;
+}
+
+.surpriseMeButton {
+  margin-top: 20px; /* Space between the search bar and the button */
+  padding: 10px 20px;
+  font-size: 16px; /* Adjust size as needed */
+  cursor: pointer;
+  background-color: #4285F4; /* Example color */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Optional: for rounded corners */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
+
+.surpriseMeButton:hover {
+  background-color: #357ae8; /* Darker shade on hover */
+}
+
+/* Inside your CSS file */
+.searchContainer {
+  display: flex;
+  padding: 10px, 20px;
+}
+
+.searchInput {
+  flex-grow: 1; /* Take up available space */
+  margin-right: 8px; /* Add some space between the input and the button */
+}
+
+.searchButton {
+  padding: 10px 20px; /* Add padding to match the input's height */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
