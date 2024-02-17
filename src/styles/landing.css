@@ -1,0 +1,17 @@
+/* components/landing.css */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+
+  background-color: black; /* Set background color to black */
+}
+
+.landing-container button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white; /* Set text color to white */
+}
