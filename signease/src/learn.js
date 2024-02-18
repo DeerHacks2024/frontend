@@ -61,7 +61,7 @@ const Learn = () => {
           border: 'none',
           color: 'white',
           cursor: 'pointer',
-          zIndex: '99'
+          zIndex: '99',
         }}
       >
         <FaHome size={50} position="absolute" z-index="99" />
@@ -89,6 +89,7 @@ const Learn = () => {
                   width: '100%',
                   height: 'auto',
                   transform: 'scaleX(-1)',
+                  border: '1px solid white', // Specify border styles as a single string
                 }}
               ></video>
             </div>
@@ -100,6 +101,8 @@ const Learn = () => {
                 flexWrap: 'wrap',
                 justifyContent: 'center',
                 alignItems: 'center',
+                margin: '0',
+                border: '1px solid white', // Specify border styles as a single string
               }}
             >
               {words.map((word, index) => (
@@ -124,25 +127,41 @@ const Learn = () => {
                 justifyContent: 'center',
                 gap: '10px',
                 marginTop: '10px',
-                height: '30px',
+                height: '47px',
               }}
             >
-              <button onClick={handlePrevious}style={{
-                  backgroundColor: 'black', // Black background
-                  color: 'white', // White text
-                  padding: '10px 20px', // Larger size, adjust as needed
-                  fontSize: '20px', // Larger font size, adjust as needed
-                  border: 'none', // Remove border
-                  cursor: 'pointer',// Cursor indicates clickable
-                }}>previous</button>
-              <button onClick={handleNext} style={{
+              <button
+                className="black-button"
+                onClick={handlePrevious}
+                style={{
                   backgroundColor: 'black', // Black background
                   color: 'white', // White text
                   padding: '10px 20px', // Larger size, adjust as needed
                   fontSize: '20px', // Larger font size, adjust as needed
                   border: 'none', // Remove border
                   cursor: 'pointer', // Cursor indicates clickable
-                }}>next</button>
+                  borderRadius: '5px',
+                  fontWeight: 'bold',
+                }}
+              >
+                previous
+              </button>
+              <button
+                className="black-button"
+                onClick={handleNext}
+                style={{
+                  backgroundColor: 'black', // Black background
+                  color: 'white', // White text
+                  padding: '10px 20px', // Larger size, adjust as needed
+                  fontSize: '20px', // Larger font size, adjust as needed
+                  border: 'none', // Remove border
+                  cursor: 'pointer', // Cursor indicates clickable
+                  borderRadius: '5px',
+                  fontWeight: 'bold',
+                }}
+              >
+                next
+              </button>
             </div>
           </div>
         </div>

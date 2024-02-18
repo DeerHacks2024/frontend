@@ -4,10 +4,23 @@ video {
   width: auto; /* Set the width to auto to maintain aspect ratio */
 }
 
-  .right-container {
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    background: linear-gradient(to right, black, navy); /* Adjust direction and colors as needed */
-  }
-  
+.right-container {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: linear-gradient(
+    to right,
+    black,
+    navy
+  ); /* Adjust direction and colors as needed */
+}
+
+.bar {
+  width: 100%;
+  border: 1px solid white;
+}
+
+.black-button:hover {
+  color: rgb(189, 217, 255);
+}
