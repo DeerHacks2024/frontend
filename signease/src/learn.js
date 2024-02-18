@@ -61,6 +61,7 @@ const Learn = () => {
           border: 'none',
           color: 'white',
           cursor: 'pointer',
+          zIndex: '99'
         }}
       >
         <FaHome size={50} />
@@ -127,8 +128,22 @@ const Learn = () => {
                 height: '30px',
               }}
             >
-              <button onClick={handlePrevious}>previous</button>
-              <button onClick={handleNext}>next</button>
+              <button onClick={handlePrevious}style={{
+                  backgroundColor: 'black', // Black background
+                  color: 'white', // White text
+                  padding: '10px 20px', // Larger size, adjust as needed
+                  fontSize: '20px', // Larger font size, adjust as needed
+                  border: 'none', // Remove border
+                  cursor: 'pointer',// Cursor indicates clickable
+                }}>previous</button>
+              <button onClick={handleNext} style={{
+                  backgroundColor: 'black', // Black background
+                  color: 'white', // White text
+                  padding: '10px 20px', // Larger size, adjust as needed
+                  fontSize: '20px', // Larger font size, adjust as needed
+                  border: 'none', // Remove border
+                  cursor: 'pointer', // Cursor indicates clickable
+                }}>next</button>
             </div>
           </div>
         </div>
