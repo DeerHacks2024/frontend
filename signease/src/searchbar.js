@@ -20,11 +20,11 @@ function SearchBar({ onSearch, surpriseData }) {
     } catch (error) {
       console.error('Error inserting event:', error);
     }
-
+    
     const wordsArray = query.split(' ');
     onSearch(wordsArray);
 
-    navigate('/learn');
+    navigate('/learn', { state: { query } });
   };
 
   return (

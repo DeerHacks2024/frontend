@@ -1,7 +1,6 @@
 // Sidebar.js
 import React, { useState, useEffect } from 'react';
 import './styles/goodsidebar.css'; // Make sure the file name matches
-import './styles/goodsidebar.css'; // Make sure the file name matches
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   const [events, setEvents] = useState([]);

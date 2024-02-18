@@ -1,9 +1,11 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import React, { useEffect, useRef } from 'react';
 // import './styles/learn.css';
 
 const Learn = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const query = location.state?.query;
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -46,7 +48,7 @@ const Learn = () => {
               <video ref={videoRef} autoPlay playsInline style={{ width: '100%', height: 'auto', transform: 'scaleX(-1)' }}></video>
             </div>
             <div className='sentence-text'>
-
+            <p>{query}</p>
             </div>
           </div>
           
