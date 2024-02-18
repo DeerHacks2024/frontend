@@ -63,7 +63,7 @@ const Learn = () => {
           cursor: 'pointer',
         }}
       >
-        <FaHome size={50} />
+        <FaHome size={50} position="absolute" z-index="99" />
       </button>
       <div className="learnContainer">
         <div className="half leftBox">

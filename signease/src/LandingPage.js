@@ -19,36 +19,36 @@ const LandingPage = () => {
   };
 
   const handleSurpriseButtonClick = () => {
-    fetch("https://deerhacks2024backend.vercel.app/randomize")
-      .then(response => response.json())
-      .then(data => {
-        console.log(data["data"]);
-        setSurpriseData(data["data"]); // Set the surprise data in state
+    fetch('https://deerhacks2024backend.vercel.app/randomize')
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data['data']);
+        setSurpriseData(data['data']); // Set the surprise data in state
       })
-      .catch(error => {
-        console.error("Error fetching data:", error);
+      .catch((error) => {
+        console.error('Error fetching data:', error);
       });
   };
 
   return (
     <>
-      <div className='landing-container'>
+      <div className="landing-container">
         <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
         <button
           className={`sidebarToggle ${sidebarOpen ? 'hideArrow' : ''}`}
           onClick={toggleSidebar}
-        >
-        </button>
-        <div className='heading'>
+        ></button>
+        <div className="heading">
           <div className="typewriter">
             <h1>SignEase</h1>
           </div>
-          <SearchBar onSearch={handleSearch} surpriseData={surpriseData} /> {/* Pass surpriseData to SearchBar */}
+          <SearchBar onSearch={handleSearch} surpriseData={surpriseData} />{' '}
+          {/* Pass surpriseData to SearchBar */}
         </div>
         <div className="background-split">
-        <div className="left-half"></div>
-        <div className="right-half"></div>
-      </div>
+          <div className="left-half"></div>
+          <div className="right-half"></div>
+        </div>
       </div>
     </>
   );

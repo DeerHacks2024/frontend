@@ -1,14 +1,17 @@
 video {
-    object-fit: cover; /* This will cover the area of the video element */
-    height: 100%; /* Set the height to the desired value */
-    width: auto; /* Set the width to auto to maintain aspect ratio */
-  }
+  object-fit: cover; /* This will cover the area of the video element */
+  height: 100%; /* Set the height to the desired value */
+  width: auto; /* Set the width to auto to maintain aspect ratio */
+}
 
-  .right-container {
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-    background: linear-gradient(to right, black, navy); /* Adjust direction and colors as needed */
-  }
-  
-  
+.right-container {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: linear-gradient(
+    to right,
+    black,
+    navy
+  ); /* Adjust direction and colors as needed */
+  z-index: 5;
+}
