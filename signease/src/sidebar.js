@@ -29,11 +29,14 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         &times;
       </button>
 
-      {events.map((event, index) => (
-        <a key={index} href={`#${event.toLowerCase().replace(/\s/g, '-')}`}>
-          {event}
+      {events
+        .filter(event => event != null) // This removes any null or undefined events
+        .map((event, index) => (
+          <a key={index} href={`#${event.toLowerCase().replace(/\s/g, '-')}`}>
+            {event}
         </a>
-      ))}
+    ))}
+
     </div>
   );
 };

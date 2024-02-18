@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import Learn from './learn'; // Adjust the import if necessary
+import Learn from './Learn'; // Adjust the import if necessary
 import LandingPage from './LandingPage';
 import './styles/App.css'; // Ensure the CSS path is correct
 
