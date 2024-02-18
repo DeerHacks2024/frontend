@@ -1,6 +1,9 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import React, { useState, useEffect, useRef } from 'react';
 import { FaHome } from 'react-icons/fa';
+import getVideoFileName from './VidMap';
+
+import sign from './animations/accept.mp4';
 // import './styles/learn.css';
 
 const Learn = () => {
@@ -63,8 +66,13 @@ const Learn = () => {
       </button>
       <div className="learnContainer">
         <div className="half leftBox">
-          <h2>Left Box</h2>
-          {/* Content for the left box */}
+          <video
+            src={getVideoFileName(words[currentIndex])}
+            autoPlay
+            loop
+            muted
+            style={{ width: '100%' }}
+          />
         </div>
         <div className="half rightBox">
           {/* <h2>Right Box</h2> */}
@@ -74,6 +82,7 @@ const Learn = () => {
               <video
                 ref={videoRef}
                 autoPlay
+                muted
                 playsInline
                 style={{
                   width: '100%',

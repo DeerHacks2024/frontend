@@ -14,13 +14,16 @@ function SearchBar({ onSearch, surpriseData }) {
     event.preventDefault();
 
     try {
-      const response = await fetch('https://deerhacks2024backend.vercel.app/insert', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ event: query }) // Sending the input text as the event
-      });
+      const response = await fetch(
+        'https://deerhacks2024backend.vercel.app/insert',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ event: query }), // Sending the input text as the event
+        }
+      );
 
       if (!response.ok) {
         throw new Error('Failed to insert event');
@@ -45,8 +48,8 @@ function SearchBar({ onSearch, surpriseData }) {
         <input
           type="text"
           className="searchInput"
-          placeholder={surpriseData ? `${surpriseData}` : "Search..."}
-          value={query} 
+          placeholder={surpriseData ? `${surpriseData}` : 'Search...'}
+          value={query}
           onChange={handleChange}
         />
         <button type="submit" className="searchButton">

@@ -1,71 +1,123 @@
+import aVideo from './animations/a.mp4';
+import acceptVideo from './animations/accept.mp4';
+import aboutVideo from './animations/about.mp4';
+import againVideo from './animations/again.mp4';
+import andVideo from './animations/and.mp4';
+import badVideo from './animations/bad.mp4';
+import bigVideo from './animations/big.mp4';
+import butVideo from './animations/but.mp4';
+import carVideo from './animations/car.mp4';
+import classVideo from './animations/class.mp4';
+import coldVideo from './animations/cold.mp4';
+import comeVideo from './animations/come.mp4';
+import dayVideo from './animations/day.mp4';
+import deafVideo from './animations/deaf.mp4';
+import driveVideo from './animations/drive.mp4';
+import easyVideo from './animations/easy.mp4';
+import eatVideo from './animations/eat.mp4';
+import everyVideo from './animations/every.mp4';
+import exampleVideo from './animations/example.mp4';
+import familyVideo from './animations/family.mp4';
+import finishVideo from './animations/finish.mp4';
+import friendVideo from './animations/friend.mp4';
+import getVideo from './animations/get.mp4';
+import growVideo from './animations/grow.mp4';
+import helloVideo from './animations/hello.mp4';
+import hereVideo from './animations/here.mp4';
+import iVideo from './animations/i.mp4';
+import importantVideo from './animations/important.mp4';
+import inVideo from './animations/in.mp4';
+import jokeVideo from './animations/joke.mp4';
+import keepVideo from './animations/keep.mp4';
+import knowVideo from './animations/know.mp4';
+import learnVideo from './animations/learn.mp4';
+import leaveVideo from './animations/leave.mp4';
+import littleVideo from './animations/little.mp4';
+import liveVideo from './animations/live.mp4';
+import manyVideo from './animations/many.mp4';
+import meaningVideo from './animations/meaning.mp4';
+import nameVideo from './animations/name.mp4';
+import nextVideo from './animations/next.mp4';
+import normalVideo from './animations/normal.mp4';
+import onlyVideo from './animations/only.mp4';
+import overlookVideo from './animations/overlook.mp4';
+import penVideo from './animations/pen.mp4';
+import playVideo from './animations/play.mp4';
+import readVideo from './animations/read.mp4';
+import rightVideo from './animations/right.mp4';
+import sadVideo from './animations/sad.mp4';
+import smallVideo from './animations/small.mp4';
+import springVideo from './animations/spring.mp4';
+import untilVideo from './animations/until.mp4';
+import useVideo from './animations/use.mp4';
+import youngVideo from './animations/young.mp4';
+import yourVideo from './animations/your.mp4';
+import yourselfVideo from './animations/yourself.mp4';
+
 const VidMap = {
-  a: 'a.mp4',
-  about: 'about.mp4',
-  accept: 'accept.mp4',
-  again: 'again.mp4',
-  and: 'and.mp4',
-  bad: 'bad.mp4',
-  big: 'big.mp4',
-  but: 'but.mp4',
-  car: 'car.mp4',
-  class: 'class.mp4',
-  cold: 'cold.mp4',
-  come: 'come.mp4',
-  day: 'day.mp4',
-  deaf: 'deaf.mp4',
-  drive: 'drive.mp4',
-  easy: 'easy.mp4',
-  eat: 'eat.mp4',
-  every: 'every.mp4',
-  example: 'example.mp4',
-  family: 'family.mp4',
-  finish: 'finish.mp4',
-  friend: 'friend.mp4',
-  get: 'get.mp4',
-  grow: 'grow.mp4',
-  hello: 'hello.mp4',
-  here: 'here.mp4',
-  i: 'i.mp4',
-  important: 'important.mp4',
-  in: 'in.mp4',
-  joke: 'joke.mp4',
-  keep: 'keep.mp4',
-  know: 'know.mp4',
-  learn: 'learn.mp4',
-  leave: 'leave.mp4',
-  little: 'little.mp4',
-  live: 'live.mp4',
-  many: 'many.mp4',
-  meaning: 'meaning.mp4',
-  name: 'name.mp4',
-  next: 'next.mp4',
-  normal: 'normal.mp4',
-  only: 'only.mp4',
-  overlook: 'overlook.mp4',
-  pen: 'pen.mp4',
-  play: 'play.mp4',
-  read: 'read.mp4',
-  right: 'right.mp4',
-  sad: 'sad.mp4',
-  small: 'small.mp4',
-  spring: 'spring.mp4',
-  until: 'until.mp4',
-  use: 'use.mp4',
-  young: 'young.mp4',
-  your: 'your.mp4',
-  yourself: 'yourself.mp4',
+  a: aVideo,
+  about: aboutVideo,
+  accept: acceptVideo,
+  again: againVideo,
+  and: andVideo,
+  bad: badVideo,
+  big: bigVideo,
+  but: butVideo,
+  car: carVideo,
+  class: classVideo,
+  cold: coldVideo,
+  come: comeVideo,
+  day: dayVideo,
+  deaf: deafVideo,
+  drive: driveVideo,
+  easy: easyVideo,
+  eat: eatVideo,
+  every: everyVideo,
+  example: exampleVideo,
+  family: familyVideo,
+  finish: finishVideo,
+  friend: friendVideo,
+  get: getVideo,
+  grow: growVideo,
+  hello: helloVideo,
+  here: hereVideo,
+  i: iVideo,
+  important: importantVideo,
+  in: inVideo,
+  joke: jokeVideo,
+  keep: keepVideo,
+  know: knowVideo,
+  learn: learnVideo,
+  leave: leaveVideo,
+  little: littleVideo,
+  live: liveVideo,
+  many: manyVideo,
+  meaning: meaningVideo,
+  name: nameVideo,
+  next: nextVideo,
+  normal: normalVideo,
+  only: onlyVideo,
+  overlook: overlookVideo,
+  pen: penVideo,
+  play: playVideo,
+  read: readVideo,
+  right: rightVideo,
+  sad: sadVideo,
+  small: smallVideo,
+  spring: springVideo,
+  until: untilVideo,
+  use: useVideo,
+  young: youngVideo,
+  your: yourVideo,
+  yourself: yourselfVideo,
 };
 
-function renderVideo(word) {
-  const videoName = VidMap[word];
-  if (videoName) {
-    // Render the video on screen using videoName
-    console.log('Rendering video:', videoName);
-    // Example: document.getElementById('video').src = videoName;
-  } else {
-    console.log('Video not found for word:', word);
+const getVideoFileName = (word) => {
+  const fileName = VidMap[word];
+  if (!fileName) {
+    throw new Error(`Video for word "${word}" not found in the mapping.`);
   }
-}
+  return fileName;
+};
 
-// Example usage:
-renderVideo('hello');
+export default getVideoFileName;
