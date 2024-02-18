@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// Inside SearchBar.js
 
-function SearchBar({ onSearch }) {
+// Inside SearchBar.js
+// ...
+function SearchBar({ onSearch, surpriseData }) {
   const [query, setQuery] = useState('');
   const [postId, setPostId] = useState(null);
   const navigate = useNavigate();
@@ -15,20 +16,7 @@ function SearchBar({ onSearch }) {
     event.preventDefault();
     
     try {
-      const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ event: query })
-      };
-      const response = await fetch('https://deerhacks2024backend.vercel.app/insert', requestOptions);
-
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-
-      const data = await response.json();
-      setPostId(data.id);
-      console.log('Event inserted successfully!', data);
+      // ...
     } catch (error) {
       console.error('Error inserting event:', error);
     }
@@ -45,7 +33,7 @@ function SearchBar({ onSearch }) {
             <input
                 type="text"
                 className="searchInput"
-                placeholder="Search..."
+                placeholder={surpriseData ? `${surpriseData}` : "Search..."}
                 value={query} 
                 onChange={handleChange}
             />
@@ -58,3 +46,4 @@ function SearchBar({ onSearch }) {
 }
 
 export default SearchBar;
+
