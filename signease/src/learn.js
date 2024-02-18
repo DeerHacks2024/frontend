@@ -3,8 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { FaHome } from 'react-icons/fa';
 import getVideoFileName from './VidMap';
 import './styles/learn.css';
+import bar from './bluebar.jpg';
 
-import sign from './animations/accept.mp4';
 // import './styles/learn.css';
 
 const Learn = () => {
@@ -77,9 +77,8 @@ const Learn = () => {
           />
         </div>
         <div className="half rightBox">
-          {/* <h2>Right Box</h2> */}
-          {/* Content for the right box */}
           <div className="right-container">
+            <img src={bar} className="bar" alt="blue bar" />
             <div className="videoContainer">
               <video
                 ref={videoRef}
