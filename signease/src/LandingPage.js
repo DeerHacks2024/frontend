@@ -7,6 +7,7 @@ import './styles/landing.css'; // Ensure the CSS path is correct
 const LandingPage = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [surpriseData, setSurpriseData] = useState(null); // State to hold surprise data
+  const [heading, setHeading] = useState('');
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
@@ -37,13 +38,17 @@ const LandingPage = () => {
           className={`sidebarToggle ${sidebarOpen ? 'hideArrow' : ''}`}
           onClick={toggleSidebar}
         >
-          {/* Button content */}
         </button>
-        <h1>SignEase</h1>
-        <SearchBar onSearch={handleSearch} surpriseData={surpriseData} /> {/* Pass surpriseData to SearchBar */}
-        <button onClick={handleSurpriseButtonClick} className="surpriseMeButton">
-          Surprise Me
-        </button>
+        <div className='heading'>
+          <div className="typewriter">
+            <h1>SignEase</h1>
+          </div>
+          <SearchBar onSearch={handleSearch} surpriseData={surpriseData} /> {/* Pass surpriseData to SearchBar */}
+        </div>
+        <div className="background-split">
+        <div className="left-half"></div>
+        <div className="right-half"></div>
+      </div>
       </div>
     </>
   );

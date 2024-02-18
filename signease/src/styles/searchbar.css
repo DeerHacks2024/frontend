@@ -1,0 +1,41 @@
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px; /* Adjust based on your preference */
+    margin: auto;
+  }
+  
+  .searchForm {
+    display: flex;
+    width: 100%;
+    border: 2px solid #ccc; /* Adjust the border color as needed */
+    border-radius: 30px; /* Increase for more pronounced curves */
+    overflow: hidden; /* Ensures inner elements adhere to the form's border-radius */
+  }
+  
+  .searchInput {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 6px 80px;
+    border-radius: 30px 0 0 30px; /* Curved left side, flat right side to meet the button */
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  .searchButton {
+    background-color: #007bff; /* Example: primary color for the button */
+    color: white;
+    border: none;
+    padding: 10px 15px; /* Adjust padding to ensure button size matches the input field */
+    cursor: pointer;
+    border-radius: 0 30px 30px 0; /* Flat left side, curved right side to complete the form's curve */
+    font-size: 16px; /* Adjust as needed */
+    height: 81px;
+  }
+  
+  /* Optional: Style for hover state to enhance user interaction */
+  .searchButton:hover {
+    background-color: #0056b3; /* Darker shade for button hover effect */
+  }
+  

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './styles/searchbar.css';
 
 function SearchBar({ onSearch, surpriseData }) {
   const [query, setQuery] = useState('');
@@ -41,7 +42,7 @@ function SearchBar({ onSearch, surpriseData }) {
 
   return (
     <div className="searchContainer">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}className="searchForm">
         <input
           type="text"
           className="searchInput"

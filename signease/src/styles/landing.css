@@ -7,3 +7,35 @@
     width: 100%;
     background-color: rgb(9, 9, 58);
 }
+
+/* Typewriter effect */
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not visible until the animation */
+    border-right: .15em solid white; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typewriter 2s steps(40, end) 1s 1 normal both,
+      blinkTextCursor 500ms steps(10, end) infinite;
+  }
+  
+  /* The typewriter cursor effect (blinking cursor) */
+  @keyframes blinkTextCursor {
+    from { border-right-color: white; }
+    to { border-right-color: transparent; }
+  }
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;;
+    height: 30%;
+}
+  
