@@ -3,4 +3,12 @@ video {
     height: 100%; /* Set the height to the desired value */
     width: auto; /* Set the width to auto to maintain aspect ratio */
   }
+
+  .right-container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: linear-gradient(to right, black, navy); /* Adjust direction and colors as needed */
+  }
+  
   
