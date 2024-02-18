@@ -50,7 +50,7 @@ function SearchBar({ onSearch }) {
                 onChange={handleChange}
             />
             <button type="submit" className="searchButton">
-                Search
+              🔍
             </button>
         </form>
     </div>

@@ -1,16 +1,13 @@
 .App {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   background-color: #121212;
   color: white;
+  height: 100vh;
 }
 
 .App h1 {
   font-size: 6rem;
-  margin-bottom: 8rem;
   color: #4285F4; /* Google blue for example */
   font-family: 'Font Name', Courier New;
 }
@@ -19,17 +16,74 @@
 
 /* App.css */
 /* App.css */
+
+.videoContainer {
+  width: 100%; /* Adjust based on your preference */
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.learnContainer {
+  display: flex;
+  flex-direction: row; /* Ensure this is set to row */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  
+}
+
+.half {
+  flex: 1; /* Each box takes up an equal amount of space */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  border: none;
+  box-sizing: border-box; /* Include border in the element's total width and height */
+  padding: 0px; /* Add some padding */
+  height: 100vh;
+}
+
+.leftBox {
+  background-color: #003060; /* Example background color */
+}
+
+.rightBox {
+  background-color: #055C9D; /* Example background color */
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+}
+
+.sentence-text{
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  background-color: rgb(212, 209, 209);
+}
+
+
 .sidebarToggle {
   position: fixed;
   top: 50%;
-  left: 250px; /* Adjust this value based on the sidebar's width to position the arrow right next to the sidebar */
+  left: 20px; /* Adjust this value based on the sidebar's width to position the arrow right next to the sidebar */
   transform: translateY(-50%);
   z-index: 100;
   cursor: pointer;
   background: none;
   border: none;
   color: #fff; /* Adjust arrow color as needed */
-  font-size: 24px; /* Adjust size as needed */
 }
 
 /* Additional styling for hover effect, etc. */
@@ -44,7 +98,7 @@
   margin-right: 5px;
   border: solid white;
   border-width: 0 2px 2px 0; /* Adjust these values for a thinner arrow */
-  padding: 3px;
+  padding: 5px;
   transform: rotate(-45deg); /* Adjust rotation if needed */
   transition: transform 0.3s; /* Smooth transition for rotation */
 }
@@ -84,39 +138,4 @@
 .searchButton {
   padding: 10px 20px;
   height: 71px; /* Add padding to match the input's height */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
