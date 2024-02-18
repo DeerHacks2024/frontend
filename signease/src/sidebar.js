@@ -1,6 +1,6 @@
 // Sidebar.js
 import React, { useState, useEffect } from 'react';
-import './styles/sidebar.css'; // Make sure the file name matches
+import './styles/goodsidebar.css'; // Make sure the file name matches
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   const [events, setEvents] = useState([]);
@@ -23,19 +23,34 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       });
   }, []); // Empty dependency array to run the effect only once
 
+  const handleButtonClick = (event) => {
+    const sectionId = event.toLowerCase().replace(/\s/g, '-');
+    const section = document.getElementById(sectionId);
+    section?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
       <button className="closebtn" onClick={toggleSidebar}>
         &times;
       </button>
-
+      <div className='history-top'>
+        <h2 className='history-text'>History</h2>
+      </div>
+    <div className='button-container'>
       {events
         .filter(event => event != null) // This removes any null or undefined events
         .map((event, index) => (
-          <a key={index} href={`#${event.toLowerCase().replace(/\s/g, '-')}`}>
-            {event}
-        </a>
-    ))}
+          <button 
+          key={index} 
+          className='sidebuttons' 
+          onClick={() => handleButtonClick(event)}
+          >
+          {event}
+        </button>
+      ))}
+    </div>
+      
 
     </div>
   );
