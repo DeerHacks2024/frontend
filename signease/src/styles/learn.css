@@ -1,0 +1,6 @@
+video {
+    object-fit: cover; /* This will cover the area of the video element */
+    height: 100%; /* Set the height to the desired value */
+    width: auto; /* Set the width to auto to maintain aspect ratio */
+  }
+  

@@ -2,6 +2,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import React, { useState, useEffect, useRef } from 'react';
 import { FaHome } from 'react-icons/fa';
 import getVideoFileName from './VidMap';
+import './styles/learn.css';
 
 import sign from './animations/accept.mp4';
 // import './styles/learn.css';
