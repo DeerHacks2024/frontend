@@ -53,6 +53,10 @@ import useVideo from './animations/use.mp4';
 import youngVideo from './animations/young.mp4';
 import yourVideo from './animations/your.mp4';
 import yourselfVideo from './animations/yourself.mp4';
+import canVideo from './animations/can.mp4';
+import fromVideo from './animations/from.mp4';
+import supportVideo from './animations/support.mp4';
+import youVideo from './animations/you.mp4';
 
 const VidMap = {
   a: aVideo,
@@ -110,6 +114,11 @@ const VidMap = {
   young: youngVideo,
   your: yourVideo,
   yourself: yourselfVideo,
+  to: nextVideo,
+  can: canVideo,
+  from: fromVideo,
+  support: supportVideo,
+  you: youVideo,
 };
 
 const getVideoFileName = (word) => {
