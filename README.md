@@ -2,8 +2,11 @@
 
 
 
-https://github.com/DeerHacks2024/frontend/assets/152770271/a9a0afb2-5bf0-42c8-b22d-c20b8664dc44
+https://github.com/DeerHacks2024/frontend/assets/152770271/f8812d14-96ea-412e-a731-b82fd2c07093
+
 ![signease](https://github.com/DeerHacks2024/frontend/assets/152770271/b5b3e627-39ad-470c-a607-fcb61797908d)
+![home screen](https://github.com/DeerHacks2024/frontend/assets/152770271/a8e2da25-ac46-427a-8642-6d3035207dd1)
+![json](https://github.com/DeerHacks2024/frontend/assets/152770271/ccf1c732-d461-4e41-b170-ccd3e88c380f)
 
 
 ### Inspiration
