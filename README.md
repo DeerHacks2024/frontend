@@ -1,4 +1,4 @@
-### SignEase
+# SignEase
 
 ### Inspiration
 Our journey with SignEase began with a vision: to foster inclusivity and connection by breaking down communication barriers. Inspired by the universal language of sign, we aimed to create a platform where all could communicate freely. Recognizing its transformative power, we embarked on a mission to build SignEase as a beacon of accessibility and inclusivity.
