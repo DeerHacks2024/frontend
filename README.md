@@ -3,11 +3,10 @@
 
 
 https://github.com/DeerHacks2024/frontend/assets/152770271/25042592-6a6f-4964-adbe-ac1d901b01bc
-
-![home screen](https://github.com/DeerHacks2024/frontend/assets/152770271/a8e2da25-ac46-427a-8642-6d3035207dd1)
 ![signease](https://github.com/DeerHacks2024/frontend/assets/152770271/b5b3e627-39ad-470c-a607-fcb61797908d)
+![home screen](https://github.com/DeerHacks2024/frontend/assets/152770271/a8e2da25-ac46-427a-8642-6d3035207dd1)
 ![json](https://github.com/DeerHacks2024/frontend/assets/152770271/ccf1c732-d461-4e41-b170-ccd3e88c380f)
-
+s
 ### Inspiration
 Our journey with SignEase began with a vision: to foster inclusivity and connection by breaking down communication barriers. Inspired by the universal language of sign, we aimed to create a platform where all could communicate freely. Recognizing its transformative power, we embarked on a mission to build SignEase as a beacon of accessibility and inclusivity.
 
