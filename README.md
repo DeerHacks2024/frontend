@@ -1,6 +1,9 @@
 # SignEase
 
-https://github.com/DeerHacks2024/frontend/assets/152770271/cc3b1a4f-d699-451c-812c-5477b50390f4
+
+https://github.com/DeerHacks2024/frontend/assets/152770271/996a4c84-f42d-4b4a-a7a9-3a5dcc94fb41
+
+
 ![signease](https://github.com/DeerHacks2024/frontend/assets/152770271/b5b3e627-39ad-470c-a607-fcb61797908d)
 ![home screen](https://github.com/DeerHacks2024/frontend/assets/152770271/a8e2da25-ac46-427a-8642-6d3035207dd1)
 ![json](https://github.com/DeerHacks2024/frontend/assets/152770271/ccf1c732-d461-4e41-b170-ccd3e88c380f)
